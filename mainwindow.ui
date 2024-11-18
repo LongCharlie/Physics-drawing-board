@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="Save">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3F4B5B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SSurface">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>平面</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Translate">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>175</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3F4B5B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>平移</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZoomIn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3F4B5B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>放大</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZoomOut">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>265</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3F4B5B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>缩小</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Ramp">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>45度斜面</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Semicircle">
+    <property name="geometry">
+     <rect>
+      <x>775</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>半圆</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="parabola">
+    <property name="geometry">
+     <rect>
+      <x>775</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>抛物线</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="curve">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>曲线</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="curverow">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>旋转箭头</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="row">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>直箭头</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quartercircle">
+    <property name="geometry">
+     <rect>
+      <x>775</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>1/4圆</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="masspoint">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>圆球</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="arctrack">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>凹陷平台</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="barriertrack">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>双界平台</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Belt">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>传送带</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="track">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>平台</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>1271</width>
+      <height>640</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">plane
+{
+}url(:/new/prefix1/Image/plane.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Ltrack">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>单界平台</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="spring">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>弹簧</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="weight">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>砝码1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bullet">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>子弹</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="block">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>小方块</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="skateboard">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>滑板</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pallet">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>托盘</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="car">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>小车</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="plane">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>飞机</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Delete">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>355</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3F4B5B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BezierControl">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>曲线控制</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Rectangle">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>矩形物块</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Rotate">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3F4B5B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>旋转</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DashRow">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>虚线箭头</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Line">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>0</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>直线</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DashedLine">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>虚线</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="weight2">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>45</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>砝码2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="weight3">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>砝码3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Ramp30">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>90</y>
+      <width>70</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #473C8B; 
+	border-style: outset;
+	border-width: 2px;
+	border-radius:5px; 
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:white; 
+	padding: 5px;
+}
+ 
+QPushButton:hover
+{
+	background-color: rgb(0, 150, 0);
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>30度斜面</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1401</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/Image/222.png);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>20</y>
+      <width>400</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 36pt &quot;Poor Richard&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Physics Sketchpad</string>
+    </property>
+   </widget>
+   <zorder>listView</zorder>
+   <zorder>Save</zorder>
+   <zorder>SSurface</zorder>
+   <zorder>Translate</zorder>
+   <zorder>ZoomIn</zorder>
+   <zorder>ZoomOut</zorder>
+   <zorder>Ramp</zorder>
+   <zorder>Semicircle</zorder>
+   <zorder>parabola</zorder>
+   <zorder>curve</zorder>
+   <zorder>curverow</zorder>
+   <zorder>row</zorder>
+   <zorder>quartercircle</zorder>
+   <zorder>masspoint</zorder>
+   <zorder>arctrack</zorder>
+   <zorder>barriertrack</zorder>
+   <zorder>Belt</zorder>
+   <zorder>track</zorder>
+   <zorder>label</zorder>
+   <zorder>Ltrack</zorder>
+   <zorder>spring</zorder>
+   <zorder>weight</zorder>
+   <zorder>bullet</zorder>
+   <zorder>block</zorder>
+   <zorder>skateboard</zorder>
+   <zorder>pallet</zorder>
+   <zorder>car</zorder>
+   <zorder>plane</zorder>
+   <zorder>Delete</zorder>
+   <zorder>BezierControl</zorder>
+   <zorder>Rectangle</zorder>
+   <zorder>Rotate</zorder>
+   <zorder>DashRow</zorder>
+   <zorder>Line</zorder>
+   <zorder>DashedLine</zorder>
+   <zorder>weight2</zorder>
+   <zorder>weight3</zorder>
+   <zorder>Ramp30</zorder>
+   <zorder>label_2</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
